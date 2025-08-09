@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  
+</head>
+<body class="bg-black">
+  <h1 class="flex justify-center items-center text-3xl text-white font-bold text-center mt-4">TO-DO List </h1>
+  <div class="flex max-sm:flex-col mt-4 border-2 m-auto  max-sm:m-auto p-3 min-[950px]:justify-center items-center space-x-1">
+  <div class="flex flex-col justify-center items-center h-100 w-100 border-2 border-amber-300 text-white rounded-3xl ">
+    <input type="text" placeholder="Add your tasks" class="w-80 bg-gray-500  text-white p-1 font-mono border-2 border-gray-800 rounded-3xl text-center hover:shadow-2xl hover:shadow-amber-300 active:shadow-2xl active:shadow-amber-300" id="task">
+    <button class="mt-5 rounded-3xl border-2 border-gray-600 bg-yellow-300 text-black width-40 font-mono px-4 hover:bg-gray-700 active:bg-gray-700" onclick="addTask()">Add Task</button>
+  </div>
+  <div class="flex flex-col h-100 w-100 border-2 border-amber-300 text-white rounded-3xl overflow-y-scroll scrollbar-hide">
+    <h1 class="mt-4 ml-4 font-bold font-mono">TASKS </h1>
+    <ul class="flex flex-col mt-3 ml-4" id="list">
+    </li>
+    </ul>
+  </div>
+  </div>
+  <div>
+    <i><span id="qoute" class="flex m-auto justify-center items-center font-bold font-mono shadow-2xl shadow-emerald-400 hover:text-xl active:text-xl text-white mt-5"></span></i>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
